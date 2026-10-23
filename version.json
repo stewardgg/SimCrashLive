@@ -1,4 +1,25 @@
 {
-  "version": "2.50.36",
-  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.50.36/Steward_Setup_v2.50.36.exe"
+  "version": "2.50.37",
+  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.50.37/Steward_Setup_v2.50.37.exe",
+  "notes": {
+    "features": [
+      "Join several leagues at once; manage them in the new Leagues window",
+      "The League button shows the league you are racing in",
+      "Update window now shows what's new in the release"
+    ],
+    "improvements": [
+      "Reports, overlay and main window now use neutral wording: contributing factors and contribution share instead of fault and verdict",
+      "Incident report adds Analysis limits to the Incident assessment",
+      "One set of measured facts per incident: speed at contact, braking and impact numbers now match across the whole report",
+      "The other car is now confirmed by the incident points the sim awards, so the right driver is named in crowded packs",
+      "Normal braking by the car ahead (e.g. into a corner) is no longer mistaken for an abrupt stop; only violent deceleration counts",
+      "Reports no longer quote a speed for the other car at the moment of contact",
+      "Speed at contact is now read just before the impact, so it no longer reflects the crash itself",
+      "Reports can flag a possible dive-bomb when the contact happened on the inside of the corner",
+      "More reliable estimate of the other car's speed; reports flag when the other car was identified with low certainty",
+      "When there is not enough data to assess an incident, the report says so instead of showing a contribution share",
+      "League invite codes now accept any code with 6 to 24 letters, numbers or hyphens (e.g. K7Q4-X9P2)",
+      "Invite codes are converted to uppercase and spaces are removed automatically"
+    ]
+  }
 }
