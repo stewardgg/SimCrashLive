@@ -1,31 +1,24 @@
 {
-  "version": "2.50.38",
-  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.50.38/Steward_Setup_v2.50.38.exe",
+  "version": "2.50.39",
+  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.50.39/Steward_Setup_v2.50.39.exe",
   "notes": {
     "features": [
-      "League cross analysis: when both drivers use Steward, the HUD, OBS and report show the result built from both cars' data",
-      "Leagues with steward decisions: the HUD and OBS show \"Awaiting decision\" and then the stewards' decision, including revisions",
-      "League version of the report with League ID and the Steward for Leagues logo",
-      "When the stewards publish a decision, the report is generated right away, with the penalty, who published it and the justification",
-      "Resize the in-game HUD from 100% down to 85% with the handle in its corner (double-click to reset)"
+      "New incident type \"Collected in a crash ahead\" for high-speed pack accidents where the car ahead loses control, with the share based on how much time you had to react and whether you lifted or braked"
     ],
     "improvements": [
-      "The result of the cross analysis is mirrored in both drivers' HUDs",
-      "In leagues, a contact between two cars always shows the league result, so both drivers see the same numbers; if the other report does not arrive within 3 minutes the HUD says so",
-      "Incident data sent to the league now includes pedal and steering inputs",
-      "The HUD history now shows incident type, X points, car number and your share, colored by who was the primary contributor",
-      "The HUD history scrolls with the mouse wheel and keeps your last incidents",
-      "Impact side is now measured correctly in fast corners, where cornering force was mistaken for the contact",
-      "The other car is identified more reliably: nearby cars that received incident points and the side of the impact are both taken into account",
-      "A full 100% share is now given only in clear-cut cases (clean rear-end, unsafe rejoin, car ahead stopping abruptly)",
-      "Side-by-side contacts confirmed by the spotter are shared, unless the inside car ran over the kerb and moved out onto the other car",
-      "Contacts with a car rejoining from a paved run-off area are now recognized as unsafe rejoins",
-      "When the car ahead only braked normally, it is no longer treated as the main contributor",
-      "When the other car cannot be confirmed, the share is limited and the report says so",
-      "The incident image now shows only the game window, on the right monitor in multi-monitor setups",
-      "The trajectory chart no longer invents the other car's sideways path when it cannot be estimated",
-      "Track maps are now recorded in any session",
+      "In a pack, a straight front impact is matched to the car directly ahead, not to a car alongside",
+      "Unsafe rejoin is only applied when the other car is clearly identified, was off track for at least half a second and came back before the contact",
+      "The spotter state used in the analysis is now taken at the exact moment of contact",
+      "Car numbers are now recorded for all nearby cars and candidates, making incidents easier to review",
+      "The HUD history now shows your car number right after the lap, before the incident type",
+      "Clearer report wording when the car ahead loses control in the pack",
       "SR Trend calibration adjusted"
+    ],
+    "fixes": [
+      "The incident image is no longer skipped when the Steward.gg window or another app is open on a different monitor",
+      "The session type is now identified even when the simulator takes a few seconds to publish it after a session change",
+      "Fixed incidents being reported as \"insufficient data\" after a session change, when the telemetry recording could stop until the app was restarted",
+      "Fixed the HUD not reading the license or analyzing incidents after switching to a different car or discipline without restarting the app"
     ]
   }
 }
