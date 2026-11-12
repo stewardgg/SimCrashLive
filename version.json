@@ -1,34 +1,16 @@
 {
-  "version": "2.51.0",
-  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.51.0/Steward_Setup_v2.51.0.exe",
+  "version": "2.51.1",
+  "download_url": "https://github.com/stewardgg/SimCrashLive/releases/download/v2.51.1/Steward_Setup_v2.51.1.exe",
   "notes": {
-    "features": [
-      "New incident type \"Collected in a crash ahead\" for high-speed pack accidents where the car ahead loses control, with the share based on how much time you had to react and whether you lifted or braked"
-    ],
     "improvements": [
-      "Steward no longer captures the game screen: incidents are analyzed from telemetry only",
-      "Leagues can now see which Steward keys joined them",
-      "The league join window now shows the full data sharing terms",
-      "In a pack, a straight front impact is matched to the car directly ahead, not to a car alongside",
-      "Unsafe rejoin is only applied when the other car is clearly identified, was off track for at least half a second and came back before the contact",
-      "The spotter state used in the analysis is now taken at the exact moment of contact",
-      "Car numbers are now recorded for all nearby cars and candidates, making incidents easier to review",
-      "The main window now shows your iRating, with the license class under the Safety Rating gauge",
-      "The HUD history now shows your car number right after the lap, before the incident type",
-      "Clearer report wording when the car ahead loses control in the pack",
-      "When the other car cannot be confirmed, the inside-kerb rule also respects the 60% limit",
-      "The inside-kerb rule now applies only when the cars were really side by side",
-      "A car hit from behind while still ahead is no longer named the main contributor",
-      "Report numbers for peak braking are kept consistent across all sections",
-      "SR Trend calibration adjusted"
+      "The incident report now asks \"Was this analysis right?\" with a button that opens the verification page to tell us",
+      "The in-game HUD shows up again in screenshots and in OBS window or display capture",
+      "Steward now measures connection quality, latency and the other car's movement around each contact, to improve netcode detection in upcoming versions",
+      "The analysis now considers the yellow flags and caution shown before the contact, and slow or stopped cars ahead (the spotter's \"accident ahead\")"
     ],
     "fixes": [
-      "The session type is now identified even when the simulator takes a few seconds to publish it after a session change",
-      "Fixed incidents being reported as \"insufficient data\" after a session change, when the telemetry recording could stop until the app was restarted",
-      "Fixed the HUD not reading the license or analyzing incidents after switching to a different car or discipline without restarting the app",
-      "Fixed a window (such as Problems?) staying black on top of the app when its page fails to load; it now closes by itself, and Problems? opens your email app instead",
-      "Press Esc to close the Problems, League, Data and Update windows",
-      "Fixed joining a league asking to update Steward even with the data sharing terms accepted"
+      "A slow car coming back into the racing line alongside you is no longer read as a rear-end by you",
+      "The HUD no longer stays on \"Analyzing crash...\" when an analysis cannot finish; it now shows whether the incident was queued or the analysis is unavailable"
     ]
   }
 }
